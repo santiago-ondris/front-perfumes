@@ -1,7 +1,6 @@
-// src/components/ResponseDisplay.jsx
 import React from "react";
 
-// Función recursiva para renderizar un valor (ya sea primitivo, objeto o array)
+// Funcion recursiva para renderizar un valor
 const renderValue = (value) => {
   if (Array.isArray(value)) {
     return (
@@ -28,7 +27,7 @@ const renderValue = (value) => {
 };
 
 const ResponseDisplay = ({ response }) => {
-  // Si no hay respuesta o no es un objeto, mostramos un mensaje simple.
+  // Si no hay respuesta o no es un objeto, se muestra un mensaje simple.
   if (!response || typeof response !== "object") {
     return (
       <div className="bg-green-50 border border-green-300 rounded p-4 shadow-sm">
@@ -68,7 +67,7 @@ const ResponseDisplay = ({ response }) => {
     );
   }
 
-  // Para respuestas no paginadas, mostramos el JSON formateado.
+  // Para respuestas no paginadas, se muestra el JSON formateado.
   return (
     <div className="bg-green-50 border border-green-300 rounded p-4 shadow-sm">
       <pre className="text-sm font-mono text-green-800 whitespace-pre-wrap">

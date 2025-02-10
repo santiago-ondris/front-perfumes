@@ -1,4 +1,3 @@
-// src/components/LoginForm.jsx
 import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -36,14 +35,12 @@ const LoginForm = () => {
       setProfile(res.data);
       setError(null);
       toast.success("¡Login exitoso!");
-      // Opcional: almacenar el token en localStorage o actualizar el estado global.
-      // localStorage.setItem("token", res.data.Token);
     } catch (err) {
       console.error("Error en login:", err);
       const errMsg = err.response?.data || "Error al iniciar sesión";
       setError(errMsg);
       setProfile(null);
-      // Si el error es un objeto, tratamos de extraer la propiedad "title" o convertirlo a string.
+      // Si el error es un objeto, se trata de extraer la propiedad "title" o convertirlo a string.
       const errorMessage =
         typeof errMsg === "object"
           ? errMsg.title || JSON.stringify(errMsg)
@@ -106,7 +103,7 @@ const LoginForm = () => {
             </button>
           </form>
 
-          {/* Sección de Credenciales de Prueba */}
+          {/* Seccion de Credenciales de Prueba */}
           <div className="mt-6 bg-green-100 p-4 rounded shadow">
             <p className="text-green-800 font-bold mb-2">Credenciales de prueba:</p>
             <ul className="list-disc list-inside text-green-700">

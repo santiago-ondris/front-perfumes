@@ -5,17 +5,16 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="min-h-screen bg-green-50 flex flex-col items-center justify-center p-8">
-      {/* Título Principal */}
+      {/* Titulo Principal */}
       <h1 className="text-5xl font-bold text-green-800 mb-4">
         WEB API PERFUME
       </h1>
 
-      {/* Introducción */}
+      {/* Introduccion */}
       <p className="text-lg text-green-700 mb-8 text-center max-w-3xl">
         Bienvenido a la API de Perfumes, un servicio simple para gestionar la
-        información de perfumes. Aquí podrás consultar, crear, actualizar y
-        eliminar perfumes, además de obtener reportes en formato CSV. Explora
-        los diferentes endpoints y descubre cómo interactuar con esta API.
+        información de perfumes. Se puede consultar, crear, actualizar y
+        eliminar perfumes, ademas de obtener reportes en formato CSV.
       </p>
 
       {/* Manual de Uso */}
@@ -51,7 +50,7 @@ const Home = () => {
         </ul>
       </div>
 
-      {/* Botón para ir al API Tester */}
+      {/* Boton para ir al API Tester */}
       <div className="mb-8">
         <Link
           to="/api"
@@ -61,7 +60,7 @@ const Home = () => {
         </Link>
       </div>
 
-      {/* Tecnologías y Patrones Utilizados */}
+      {/* Tecnologias y Patrones Utilizados */}
       <div className="mt-8 text-green-700">
         <p className="mb-2 font-semibold">Tecnologías y Patrones Utilizados:</p>
         <ul className="list-disc list-inside">

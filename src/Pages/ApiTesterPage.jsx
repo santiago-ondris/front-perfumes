@@ -1,10 +1,8 @@
-// src/pages/ApiTesterPage.jsx
 import React, { useState } from "react";
 import EndpointTester from "../Components/EndpointTester";
 import endpoints from "../Endpoints";
 
 const ApiTesterPage = () => {
-  // Puedes inicializar con el primer endpoint de la lista (o el que prefieras)
   const [selectedEndpointIndex, setSelectedEndpointIndex] = useState(0);
 
   // Maneja el cambio en el desplegable

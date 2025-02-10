@@ -1,4 +1,3 @@
-// src/components/RegisterForm.jsx
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -23,15 +22,12 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Asegúrate de que la URL base y el path coincidan con tu backend.
       const res = await axios.post(
         "https://apiperfumes-awehgvd8fgerf2ev.brazilsouth-01.azurewebsites.net/api/account/register",
         formData
       );
       setProfile(res.data);
       setError(null);
-      // Opcional: almacenar el token en localStorage o actualizar el estado global.
-      // localStorage.setItem("token", res.data.Token);
     } catch (err) {
       setError(err.response?.data || "Error en el registro");
       setProfile(null);
@@ -49,7 +45,6 @@ const RegisterForm = () => {
             <p className="font-bold">Bienvenido, {profile.NombreCompleto}</p>
             <p>Email: {profile.Email}</p>
             <p>Username: {profile.Username}</p>
-            {/* Aquí podrías mostrar también el token o redirigir al usuario */}
           </div>
         </div>
       ) : (
