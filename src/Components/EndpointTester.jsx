@@ -6,8 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // URL base de la API (asegúrate de incluir "https://")
-const baseUrl =
-  "https://apiperfumes-awehgvd8fgerf2ev.brazilsouth-01.azurewebsites.net";
+const baseUrl = import.meta.env.VITE_API_BASE_URL;
 
 const EndpointTester = ({ endpoint }) => {
   // Inicializa los valores del formulario según los parámetros definidos en el endpoint.

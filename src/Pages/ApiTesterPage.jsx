@@ -1,7 +1,7 @@
 // src/pages/ApiTesterPage.jsx
 import React, { useState } from "react";
-import EndpointTester from "../components/EndpointTester";
-import endpoints from "../endpoints";
+import EndpointTester from "../Components/EndpointTester";
+import endpoints from "../Endpoints";
 
 const ApiTesterPage = () => {
   // Puedes inicializar con el primer endpoint de la lista (o el que prefieras)
